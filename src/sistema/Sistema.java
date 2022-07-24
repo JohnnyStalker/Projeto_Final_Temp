@@ -142,7 +142,7 @@ public class Sistema {
         return false;
     }
     
-    public boolean atualizarnomeJogo(Jogo jogo, String nome){
+    public boolean atualizarNomeJogo(Jogo jogo, String nome){
         
         if(nome != null && !nome.isEmpty()){
             for(Jogo jogoRegistrado : jogosSistema){
@@ -188,6 +188,4 @@ public class Sistema {
 	public List<Jogo> getJogosSistema() {
 		return jogosSistema;
 	}
-    
-    
 }
