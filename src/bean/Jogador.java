@@ -124,7 +124,7 @@ public abstract class Jogador {
 
     @Override
     public String toString() {
-        return "\n" + this.getClass().getSimpleName() + "\n" + "\nNome: " + nome + "\nSobrenome: " + sobrenome + "\nNickname: " + nickname + "\nEmail: " + email + "\nIdade: " + idade;
+        return "\nNome: " + nome + sobrenome + "\nNickname: " + nickname + "\nIdade: " + idade;
     }
 }
 
