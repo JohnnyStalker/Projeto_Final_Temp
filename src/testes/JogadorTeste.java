@@ -34,7 +34,7 @@ public class JogadorTeste {
 	}
 
 	@Test
-	public void testeImprimirPost() {
+	public void testeImprimirJogos() {
 		Jogador jogador1 = new JogadorNoob("test", "test", "test", "test", 20, "test");
 		jogador1.adicionarJogo(new Jogo(1, "test1"));
 		if (jogador1.imprimirJogos().equals("" + new Jogo(1, "test1")))
