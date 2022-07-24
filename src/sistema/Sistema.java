@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package sistema;
 
 import bean.Jogador;
@@ -12,16 +8,12 @@ import bean.Jogo;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Solônio Filho
- */
 public class Sistema {
     
-    private List<Jogador> listaJogadores = new ArrayList();
-    private List<Jogo> jogosSistema = new ArrayList();
+    private List<Jogador> listaJogadores = new ArrayList<Jogador>();
+    private List<Jogo> jogosSistema = new ArrayList<Jogo>();
     
-    public void adicionarJogadorCaptan(String nome, String sobrenome, String nickname, String email, Integer idade, String senha){
+    public void adicionarJogadorCaptain(String nome, String sobrenome, String nickname, String email, Integer idade, String senha){
         Jogador jogador = new JogadorCaptain(nome, sobrenome, nickname, email, idade, senha);
         listaJogadores.add(jogador);
     }
@@ -190,4 +182,12 @@ public class Sistema {
         
         return null;
     }
+	public List<Jogador> getListaJogadores() {
+		return listaJogadores;
+	}
+	public List<Jogo> getJogosSistema() {
+		return jogosSistema;
+	}
+    
+    
 }
