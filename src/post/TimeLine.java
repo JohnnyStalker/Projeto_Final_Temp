@@ -69,9 +69,6 @@ public class TimeLine {
         if (this.id != other.id) {
             return false;
         }
-        if (!Objects.equals(this.listaPostsPublicados, other.listaPostsPublicados)) {
-            return false;
-        }
         return true;
     }
     
