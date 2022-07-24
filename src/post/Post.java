@@ -35,8 +35,14 @@ public class Post {
         return curtidas;
     }
 
-    public void setCurtidas(int curtidas) {
-        this.curtidas = curtidas;
+    public void curtirPost() {
+        this.curtidas = curtidas + 1;
+    }
+	
+    public void removerCurtida() {
+	if(this.curtidas > 0){
+        	this.curtidas = this.curtidas - 1;
+	}
     }
 
     public void adicionarMidia (Midia midia) {
