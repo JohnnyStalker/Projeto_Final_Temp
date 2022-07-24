@@ -16,8 +16,10 @@ public class PostTeste {
 	@Test
 	public void testeAdicionarMidia() {
 		Post post = new Post("test", 1);
+		Post postaux = new Post("test", 1);
+		postaux.getListaMidiasPost().add(new Audio("src", "par"));
 		post.adicionarMidia(new Audio("src", "par"));
-		assertEquals(post.toString(), post.toString());
+		assertEquals(post.getListaMidiasPost().toString(), postaux.getListaMidiasPost().toString());
 		System.out.println("Passou!");
 	}
 	
@@ -32,6 +34,14 @@ public class PostTeste {
 		post2.adicionarMidia(midia2);
 		post1.removerMidia(midia1);
 		assertEquals(post1.toString(), post2.toString());
+		System.out.println("Passou!");
+	}
+	
+	@Test
+	public void testeCurtirPost() {
+		Post post = new Post("test", 1);
+		post.curtirPost();
+		assertEquals(2, post.getCurtidas());
 		System.out.println("Passou!");
 	}
 	
