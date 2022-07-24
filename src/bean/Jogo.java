@@ -7,9 +7,14 @@ public class Jogo {
     private String nome;
     
     public Jogo(double preco, String nome) {
-    	this.id = hashCode();
-        this.preco = preco;
-        this.nome = nome;
+	if(nome != null && !nome.isEmpty()){
+            this.id = hashCode();
+            this.preco = preco;
+            this.nome = nome;
+        }
+        else{
+            System.out.println("Campos do jogo não foram preenchidos corretamente!"); 
+        }
     }
 
     public int getId() {
@@ -64,7 +69,7 @@ public class Jogo {
     
     @Override
     public String toString() {
-        return "\n\nID: " + id + "\nNome: " + nome + "\nPreco: " + preco;
+        return "\n{ID: " + id + ", Nome: " + nome + ", Preco: " + preco + "}";
     }
     
     
