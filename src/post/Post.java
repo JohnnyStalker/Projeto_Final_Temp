@@ -34,8 +34,12 @@ public class Post {
     public int getCurtidas() {
         return curtidas;
     }
+    
+    public List<Midia> getListaMidiasPost() {
+		return listaMidiasPost;
+	}
 
-    public void curtirPost() {
+	public void curtirPost() {
         this.curtidas = curtidas + 1;
     }
 	
