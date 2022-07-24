@@ -30,9 +30,13 @@ public class Main {
     	jogador2.adicionarPost(post2);
     	
     	System.out.println(jogador1.toString());
+    	System.out.println(jogador1.imprimirJogos());
+    	System.out.println(jogador1.getTimeline().visualizarPosts());
     	System.out.println("Influência: " + jogador1.calcularInfluencia());
     	
     	System.out.println(jogador2.toString());
+    	System.out.println(jogador2.imprimirJogos());
+    	System.out.println(jogador2.getTimeline().visualizarPosts());
     	System.out.println("Influência: " + jogador2.calcularInfluencia());
     }
     
