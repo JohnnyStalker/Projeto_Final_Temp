@@ -1,6 +1,7 @@
 package bean;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import post.Post;
 import post.TimeLine;
@@ -121,8 +122,25 @@ public abstract class Jogador {
     }
     
     public abstract double calcularInfluencia();
-
+    
     @Override
+	public int hashCode() {
+		return Objects.hash(email, nickname);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Jogador other = (Jogador) obj;
+		return Objects.equals(email, other.email) && Objects.equals(nickname, other.nickname);
+	}
+
+	@Override
     public String toString() {
         return "\nNome: " + nome + sobrenome + "\nNickname: " + nickname + "\nIdade: " + idade;
     }
