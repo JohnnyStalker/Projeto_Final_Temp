@@ -73,5 +73,3 @@ public class Post {
     		return "\nPost: " + textoPost + "\n\nMidias: " + midias + "\n\nHorário da Publicação: " + horarioPublicacao + "\nCurtidas: " + curtidas;
     }
 }
-
-
