@@ -7,14 +7,18 @@ public class Video extends Midia {
 		super(caminhoMidia);
 		this.duracao = duracao;
 	}
+	
+	public String getDuracao() {
+            return duracao;
+        }
+
+        public void setDuracao(String duracao) {
+            this.duracao = duracao;
+        }
 
 	@Override
 	public String getCaminhoMidia() {
 		return caminhoMidia;
-	}
-
-	public String video() {
-		return duracao;
 	}
 	
 	@Override
