@@ -182,6 +182,18 @@ public class Sistema {
         
         return null;
     }
+    public Jogo buscarJogo(int id){
+        
+        for(Jogo jogoRegistrado : jogosSistema){
+            
+            if(jogoRegistrado.getId() == id){
+                return jogoRegistrado;
+            }
+        }
+        
+        return null;
+    }
+	
 	public List<Jogador> getListaJogadores() {
 		return listaJogadores;
 	}
