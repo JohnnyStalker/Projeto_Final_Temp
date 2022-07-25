@@ -8,18 +8,22 @@ public class Audio extends Midia {
 		super(caminhoMidia);
 		this.duracao = duracao;
 	}
+	
+	public String getDuracao() {
+            return duracao;
+        }
+
+        public void setDuracao(String duracao) {
+            this.duracao = duracao;
+        }
 
 	@Override
 	public String getCaminhoMidia() {
 		return caminhoMidia;
 	}
-
-	public String audio() {
-		return duracao;
-	}
 	
 	@Override
 	public String toString() { //+Audio
-		return "\n" + getClass().getSimpleName() + "\nOrigem: " + this.caminhoMidia + "\nDuração: " + audio();
+		return "\n" + getClass().getSimpleName() + "\nOrigem: " + this.caminhoMidia + "\nDuração: " + this.getDuracao();
 	}
 }
