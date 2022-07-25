@@ -24,7 +24,7 @@ public class Imagem extends Midia {
 	
 	@Override
 	public String toString() { //+Imagem
-		return "\n" + getClass().getSimpleName() + "\nOrigem: " + this.caminhoMidia + "\nResolução: " + imagem();	
+		return "\n" + getClass().getSimpleName() + "\nOrigem: " + this.caminhoMidia + "\nResolução: " + this.getResolucao();	
 	}
 	
 	
