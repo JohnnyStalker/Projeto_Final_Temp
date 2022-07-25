@@ -8,14 +8,18 @@ public class Imagem extends Midia {
 		super(caminhoMidia);
 		this.resolucao = resolucao;
 	}
+	
+	public String getResolucao() {
+            return resolucao;
+        }
 
+        public void setResolucao(String resolucao) {
+            this.resolucao = resolucao;
+        }
+	
 	@Override
 	public String getCaminhoMidia() {
 		return caminhoMidia;
-	}
-
-	public String imagem() {
-		return resolucao;
 	}
 	
 	@Override
