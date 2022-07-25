@@ -1,7 +1,7 @@
 package midia;
 
 public class Video extends Midia {
-	protected String duracao;
+	private String duracao;
 
 	public Video(String caminhoMidia, String duracao) {
 		super(caminhoMidia);
