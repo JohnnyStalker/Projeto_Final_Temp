@@ -19,8 +19,8 @@ public class JogadorTeste {
 	public void testeAdicionarJogo() {
 		Jogador jogador1 = new JogadorCaptain("test", "test", "test", "test", 20, "test");
 		jogador1.adicionarJogo(new Jogo(1, "test"));
-		if(jogador1.imprimirJogos().equals(("" + new Jogo(1, "test"))))
-			System.out.println("Passou!");
+		assertEquals(jogador1.imprimirJogos(), "" + new Jogo(1, "test"));
+		System.out.println("Passou!");
 	}
 	
 	@Test
@@ -29,6 +29,7 @@ public class JogadorTeste {
 		jogador1.adicionarJogo(new Jogo(1, "test1"));
 		jogador1.adicionarJogo(new Jogo(2, "test2"));
 		jogador1.removerJogo(new Jogo(1, "test2"));
+		assertEquals(jogador1.imprimirJogos(), ("" + new Jogo(2,"test2")));
 		if(jogador1.imprimirJogos().equals(("" + new Jogo(2,"test2"))))
 			System.out.println("Passou!");
 	}
@@ -37,8 +38,8 @@ public class JogadorTeste {
 	public void testeImprimirJogos() {
 		Jogador jogador1 = new JogadorNoob("test", "test", "test", "test", 20, "test");
 		jogador1.adicionarJogo(new Jogo(1, "test1"));
-		if (jogador1.imprimirJogos().equals("" + new Jogo(1, "test1")))
-			System.out.println("Passou!");
+		assertEquals(jogador1.imprimirJogos(), (""+new Jogo(1, "test1")));
+		System.out.println("Passou!");
 	}
 	
 	@Test
@@ -47,9 +48,10 @@ public class JogadorTeste {
 		lista.add(new Post("test", 1));
     	Jogador jogador1 = new JogadorNoob("test", "test", "test", "test", 20, "test");
     	jogador1.adicionarPost(new Post("test", 1));
-    	if (jogador1.getTimeline().getListaPostsPublicados().toString().equals(lista.toString()))
-    		System.out.println("Passou!");
-    }
+    	assertEquals(jogador1.getTimeline().getListaPostsPublicados().toString(), lista.toString());
+    	System.out.println("Passou!");
+	}
+    
     
 	@Test
 	public void testeRemoverPost() {
@@ -61,9 +63,8 @@ public class JogadorTeste {
     	jogador1.adicionarPost(post1);
     	jogador1.adicionarPost(post2);
     	jogador1.removerPost(post1);
-    	
-    	if (jogador1.getTimeline().getListaPostsPublicados().toString().equals(lista.toString()))
-    		System.out.println("Passou!");
+    	assertEquals(jogador1.getTimeline().getListaPostsPublicados().toString(), lista.toString());
+    	System.out.println("Passou!");
 	}
 	
 	@Test
