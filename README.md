@@ -8,3 +8,6 @@ Repositório utilizado para a criação e manutenção do código através do Gi
 - Raphael Lacerda.
 - Solonio Afonso.
 - Vinicius Coutinho.
+
+
+Projeto completo disponível para download na aba releases.
