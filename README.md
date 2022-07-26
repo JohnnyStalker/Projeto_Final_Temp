@@ -6,5 +6,5 @@ Repositório utilizado para a criação e manutenção do código através do Gi
 - Jonathas Nóbrega.
 - Luiz Filipe.
 - Raphael Lacerda.
-- Solônio Afonso.
+- Solonio Afonso.
 - Vinicius Coutinho.
