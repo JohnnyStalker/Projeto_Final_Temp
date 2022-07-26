@@ -29,9 +29,9 @@ public class MidiaTeste {
 		Audio audio = new Audio("src", "par");
 		Video video = new Video("src", "par");
 		Imagem imagem = new Imagem("src", "par");
-		Assert.assertEquals("par", audio.audio());
-		Assert.assertEquals("par", video.video());
-		Assert.assertEquals("par", imagem.imagem());
+		Assert.assertEquals("par", audio.getDuracao());
+		Assert.assertEquals("par", video.getDuracao());
+		Assert.assertEquals("par", imagem.getResolucao());
 		System.out.println("Passou!");
 	}
 }
