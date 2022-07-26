@@ -1,5 +1,3 @@
-# Projeto_Final_Temp
-Repositório Temporário
+# ProjetoFinal
 
-
-Repositório temporário apenas para compartilhar arquivos de projeto
+Repositório utilizado para a criação e manutenção do código através do GitHub, todo o código foi criado na branch master.
